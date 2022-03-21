@@ -16,9 +16,9 @@ wp_edit = ''
 date_number = 1
 def check_pv():
     scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('mywp2v-505293b83604.json', scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name('gcpのjsonファイル名.json', scope)
     gc = gspread.authorize(credentials)
-    SPREADSHEET_KEY = '1Rs8Q01HwJdBPLrxme60rBSZm5aUR8pm6CkQNZzZ-r9w'
+    SPREADSHEET_KEY = 'スプレッドシートキー'
     worksheet = gc.open_by_key(SPREADSHEET_KEY).sheet1
     worksheet2 = gc.open_by_key(SPREADSHEET_KEY).worksheet('PV増減表')
 
