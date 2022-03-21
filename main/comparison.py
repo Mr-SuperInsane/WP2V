@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 credentials = ServiceAccountCredentials.from_json_keyfile_name('mywp2v-505293b83604.json', scope)
 gc = gspread.authorize(credentials)
-SPREADSHEET_KEY = '1Rs8Q01HwJdBPLrxme60rBSZm5aUR8pm6CkQNZzZ-r9w'
+SPREADSHEET_KEY = 'スプレッドシートキー'
 worksheet = gc.open_by_key(SPREADSHEET_KEY).sheet1
 worksheet2 = gc.open_by_key(SPREADSHEET_KEY).get_worksheet(1)
 while True:
