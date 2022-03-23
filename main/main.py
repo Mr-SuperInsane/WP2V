@@ -7,9 +7,9 @@ import json
 from oauth2client.service_account import ServiceAccountCredentials
 import schedule
 
-mail_username = 'naokun'
-password = 'Naokunconsulting8282/wordpress'
-wp_edit = 'https://nao-consulting.net/wp-admin/edit.php'
+mail_username = 'wordpress account mail or username'
+password = 'wordpress account password'
+wp_edit = 'https://your URL.dmain/wp-admin/edit.php'
 
 date_number = 2
 def check_pv():
